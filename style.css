@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: url(#ggoo);
+}
+#pizza1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation: goo 2s 1 ease-in-out alternate forwards;
+    transform: rotate(55deg);
+    transform-origin: bottom left;
+    z-index: 5;
+}
+
+@keyframes goo {
+    0%{
+        transform: rotateZ(55deg);
+    }   
+    50%{
+        transform: rotateZ(85deg);
+    } 
+    100%{
+        transform: rotateZ(198deg);
+    }  
+}
+
+#pizza2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform-origin: bottom left;
+    animation: goo2 2s 1 2s ease-in-out alternate forwards;
+}
+
+@keyframes goo2 {
+    0%{
+        transform: rotateZ(0deg);
+    }   
+    50%{
+        transform: rotateZ(55deg);
+    } 
+    100%{
+        transform: rotateZ(144deg);
+    }  
+}
+#pizza3{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-55deg);
+    transform-origin: bottom left;
+    animation: goo3 2s 1 4s ease-in-out alternate forwards;
+}
+
+@keyframes goo3 {
+    0%{
+        transform: rotateZ(-55deg);
+    }   
+    50%{
+        transform: rotateZ(0deg);
+    } 
+    100%{
+        transform: rotateZ(90deg);
+    }  
+}
+#pizza4{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-108deg);
+    transform-origin: bottom left;
+    animation: goo4 2s infinite 6s ease-in-out alternate forwards;
+}
+
+@keyframes goo4 {
+    0%{
+        transform: rotateZ(-108deg);
+    }   
+    50%{
+        transform: rotateZ(-55deg);
+    } 
+    100%{
+        transform: rotateZ(36deg);
+    }  
+}
